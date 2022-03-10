@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://transform/" xmlns:tns="http://transform/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="transformText" type="tns:transformText"/>
+
+  <xs:element name="transformTextResponse" type="tns:transformTextResponse"/>
+
+  <xs:complexType name="transformText">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="transformTextResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
